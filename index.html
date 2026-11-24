@@ -241,7 +241,7 @@
 <div id="announce" class="hidden"><div id="announce-box"></div></div>
 
 <!-- ===== SOUND ===== -->
-<button id="sound-btn" title="เพลงและเสียง" onclick="$('sound-panel').classList.toggle('hidden')">🎵</button>
+<button id="sound-btn" title="เพลงและเสียง" onclick="$('sound-panel').classList.toggle('hidden'); loadYtApi()">🎵</button>
 <div id="sound-panel" class="hidden">
   <h3>🎵 เพลงพื้นหลัง (YouTube)</h3>
   <input type="text" id="yt-url" placeholder="วางลิงก์ YouTube เช่น https://youtu.be/...">
@@ -252,6 +252,7 @@
   <div class="row">🔊 เพลง <input type="range" id="music-vol" min="0" max="100" value="40"> <span id="music-vol-n">40</span></div>
   <div class="row">🔔 เอฟเฟกต์ <input type="range" id="sfx-vol" min="0" max="100" value="70"> <span id="sfx-vol-n">70</span></div>
   <div id="yt-msg"></div>
+  <div style="font-size:11px;color:#777">บน iPhone ปรับเสียงเพลงด้วยปุ่มเสียงข้างเครื่อง (iOS ไม่ให้เว็บปรับเสียงคลิปเอง) · ถ้ากดเล่นแล้วเพลงไม่ขึ้น ให้แตะที่กรอบวิดีโอด้านล่าง</div>
   <div id="yt-box"><div id="yt-player"></div></div>
 </div>
 
